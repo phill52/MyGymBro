@@ -2,6 +2,8 @@ import { Text, View, Image, Button } from 'react-native'
 import React, { Component } from 'react'
 import { LinearGradient } from 'expo-linear-gradient';
 import styles from './Styles.js';
+import { Shadow } from 'react-native-shadow-2';
+
 import { 
     Cairo_200ExtraLight,
     Cairo_300Light,
@@ -29,8 +31,12 @@ const WelcomePage = (props) => {
                 </View>
                 <Text style={styles.title}>My Gym Bro</Text>
                 <View style={{alignItems: 'center', flex: 1, justifyAlign: 'center'}}>
+                    <View style={{height:10}}/>
                     <Text style={styles.subtext} adjustsFontSizeToFit={true} numberOfLines={3}>{'\n'} A fitness companion to keep you on track with your goals</Text>
-                    <LoginButton transparent={true} content='login' />
+                    <View style={{height: 132}}/>
+                    <LoginButton transparent={false} content='Login' />
+                    <View style={{height:10}}/>
+                    <LoginButton transparent={true} content='Register' />
                 </View>
         </View>
     );

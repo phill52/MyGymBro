@@ -37,12 +37,12 @@ const styles = StyleSheet.create({
         lineHeight: 15,
     }, 
     logo:{
-        width: 240,
-        height: 240,
+        width: 64,
+        height: 64,
     },
     imageWrapper:{
-        marginTop:127,
-        alignSelf: 'center',
+        marginLeft: '5%',
+        marginTop:63,
         shadowColor: "#000",
     },
     textWrapper:{
@@ -50,6 +50,20 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    input:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'left',
+    },
+    aboveField:{
+        fontFamily: 'Cairo',
+        textAlign: 'left',
+    },
+    inputField:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '40%',
+    }
 });
 
 export default styles;

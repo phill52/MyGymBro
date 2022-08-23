@@ -4,20 +4,44 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const LoginButton = (props) => {
     const { transparent, content, screenName} = props;
-    const backColor = transparent === true ? 'rgba(0,0,0,0.0)': '#CD522B';
-    const strokeColor = transparent === true ? '#CD522B' : 'rgba(0,0,0,0.0)';
-
+    if (transparent){
+        return(
+            <View style={{
+                borderWidth:2,
+                borderColor:'#CD522B',
+                alignItems:'center',
+                justifyContent:'center',
+                width:298,
+                height:44,
+                backgroundColor: 'rgba(0,0,0,0.0)',
+                borderRadius:151,
+                elevation: 5,
+                }} >
+                    {/* <Pressable> */}
+                <Text style={{color: 'white', fontFamily: 'Cairo', fontSize: 16, textAlign: 'center',}}>{content}</Text>
+                {/* </Pressable> */}
+            </View> 
+        );
+    }
+    // const backColor = transparent === true ? 'rgba(0,0,0,0.0)': '#CD522B';
+    // const strokeColor = transparent === true ? '#CD522B' : 'rgba(0,0,0,0.0)';
     return(
         <View style={{
-            borderWidth:2,
-            borderColor:{strokeColor},
             alignItems:'center',
             justifyContent:'center',
             width:298,
             height:44,
-            backgroundColor: {backColor},
+            backgroundColor: '#CD522B',
             borderRadius:151,
-            elevation: 5,
+            textShadowColor: 'black',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.29,
+        shadowRadius: 4.65,
+        elevation: 7,
             }} >
                 {/* <Pressable> */}
             <Text style={{color: 'white', fontFamily: 'Cairo', fontSize: 16, textAlign: 'center',}}>{content}</Text>

@@ -51,13 +51,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     input:{
-        justifyContent: 'center',
-        alignItems: 'center',
         textAlign: 'left',
+        marginLeft: '12%',
     },
     aboveField:{
+        color: 'white',
+        fontSize: 12,
         fontFamily: 'Cairo',
         textAlign: 'left',
+        marginLeft: '10%'
     },
     inputField:{
         alignItems: 'center',

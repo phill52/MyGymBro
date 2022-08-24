@@ -2,7 +2,6 @@ import { Text, View, Image, Button } from 'react-native'
 import React, { Component } from 'react'
 import { LinearGradient } from 'expo-linear-gradient';
 import styles from './Styles.js';
-import { Shadow } from 'react-native-shadow-2';
 
 import { 
     Cairo_200ExtraLight,

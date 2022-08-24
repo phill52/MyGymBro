@@ -2,7 +2,6 @@ import { Text, View, Image, Button, TextInput, KeyboardAvoidingView, StyleSheet 
 import React, { Component } from 'react'
 import { LinearGradient } from 'expo-linear-gradient';
 import styles from './Styles.js';
-import { Shadow } from 'react-native-shadow-2';
 import { 
     Cairo_200ExtraLight,
     Cairo_300Light,
@@ -36,14 +35,13 @@ const LoginPage = (props) => {
                         <Text style={styles.subtext} adjustsFontSizeToFit={true} numberOfLines={3}>{'\n'} Welcome Back</Text>
                     </View>
                         <Text style={styles.aboveField}> Email</Text>
-
-                        <View style={styles.inputField}>
-
-                            <TextInput
+                        <TextInput
                             placeholder="Email"
                             //   value={}
                             //   onChangeText={text =>}
                             style={styles.input}/>
+                        <View style={{justifyContent: 'center', alignItems: 'center',}}>
+                        <View style={styles.inputField}>
                             <View
                                 style={{
                                 width: 298,
@@ -52,17 +50,20 @@ const LoginPage = (props) => {
                                 margin:3,
                                 }}
                             />
-                        </View>
+                    </View>
+                    </View>
                           <TextInput
                           placeholder="Password"
                         //   value={}
                         //   onChangeText={text =>} 
                           style={styles.input}
                           secureTextEntry/>
+                          
                         <View style={{height: 132}}/>
                         <LoginButton transparent={false} content='Login' />
                         <View style={{height:10}}/>
                         <LoginButton transparent={true} content='Register' />
+                        
             </View>
         </KeyboardAvoidingView>
     );
